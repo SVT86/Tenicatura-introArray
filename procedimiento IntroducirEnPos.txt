@@ -1,0 +1,15 @@
+procedimiento IntroducirEnPos (ref array:arrayDeEnteros, ref ce:entero, val dato:entero, pos:entero)
+
+    var locales
+        indice : entero
+    
+    inicio
+
+        para indice <- ce hasta pos pasos -1 hacer
+            array[indice + 1]<-array[indice]
+        finPara
+
+        array[pos] <-dato
+        ce <- ce + 1
+        
+finProcedimiento
