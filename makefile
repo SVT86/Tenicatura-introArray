@@ -5,4 +5,4 @@ introPos.exe :	introPos.o
 introPos.o:		introPos.c
 				${CC} -c introPos.c -o introPos.o
 clean:
-				rem *.o *.exe
+				rm *.o *.exe
